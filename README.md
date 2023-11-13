@@ -50,7 +50,7 @@ git clone https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO.git
 Vamos entrar no workspace contido no projeto pelo comando
 
 ```bash
-cd M8T2-ATIVIDADES-CAIO/workspace
+cd M8T2-ATIVIDADES-CAIO/p2/ws
 ```
 
 Vamos rodar o comando de build do workspace
@@ -69,7 +69,7 @@ source install/setup.zsh # ou setup.bash dependendo do shell
 Agora podemos inicializar nossos pacotes através dos launch files contidos no workspace, assim iremos rodar o comando 
 
 ```bash
-ros2 launch mapa mapa_launch.py
+ros2 launch mapping_package mapping_launch.py
 ```
 
 Então veremos as telas a seguir e poderemos controlar nosso robô para realizar o mapeamento do mundo do turtlebot:
