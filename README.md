@@ -74,7 +74,7 @@ ros2 launch mapping_package mapping_launch.py
 
 Então veremos as telas a seguir e poderemos controlar nosso robô para realizar o mapeamento do mundo do turtlebot:
 
-[Screencast from 12-11-2023 22:58:59.webm](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/c78044a1-a5c8-44aa-98e1-6d46350a9b2b)
+[Mapping](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/c78044a1-a5c8-44aa-98e1-6d46350a9b2b)
 
 E assim teremos um ambiente mapeado que pode ser salvo através do seguinte comando: 
 ```bash
@@ -82,5 +82,6 @@ ros2 run nav2_map_saver map_saver_cli -f $diretório/de/preferência$
 ```
 
 ## Startup via launch file Navegação
+A sessão abaixo pretendia fazer o lançamento do mapa com o uso do rviz para passar por uma série pontos, contudo, em decorrência de um erro não identificado não foi possível realizar a atividade. 
 
-W.I.P
+[Navigation](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/2d8f1697-c23d-408f-9554-a4fc4a632637)
