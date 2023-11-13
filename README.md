@@ -29,6 +29,11 @@ export TURTLEBOT3_MODEL=burger
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
 ```
 
+## Dependências adicionais
+```bash
+sudo apt-get install ros-humble-turtle-tf2-py ros-humble-tf2-tools ros-humble-tf-transformations
+```
+
 Após este passo devemos rodar o comando source no shell utilizado (bash ou zsh), da seguinte forma: 
 
 ```bash
