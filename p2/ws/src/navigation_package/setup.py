@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-		'navigation = navigation_package.navigation_controller:main'
+		'set_origin = navigation_package.set_origin:main',
+	        'navigation_controller = navigation_package.navigation_controller:main'
         ],
     },
 )

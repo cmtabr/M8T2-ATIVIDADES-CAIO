@@ -2,7 +2,6 @@ import rclpy
 from nav2_simple_commander.robot_navigator import BasicNavigator
 from geometry_msgs.msg import PoseStamped
 from tf_transformations import quaternion_from_euler
-from time import sleep
 
 def main():
     rclpy.init()
@@ -19,8 +18,8 @@ def main():
     initial_pose.pose.orientation.z = q_z
     initial_pose.pose.orientation.w = q_w
 
-    nav.setInitialPose(initial_pose)
     nav.waitUntilNav2Active()
+    nav.setInitialPose(initial_pose)
 
     rclpy.shutdown()
 
