@@ -66,7 +66,7 @@ source install/setup.zsh # ou setup.bash dependendo do shell
 ```
 
 ## Startup via launch file Mapeamento
-Agora podemos inicializar nossos pacotes através dos launch files contidos no workspace, assim iremos rodar o comando 
+Agora podemos inicializar nossos pacotes através do launch file contido no workspace, assim iremos rodar o comando:
 
 ```bash
 ros2 launch mapping_package mapping_launch.py
@@ -82,6 +82,15 @@ ros2 run nav2_map_saver map_saver_cli -f $diretório/de/preferência$
 ```
 
 ## Startup via launch file Navegação
-A sessão abaixo pretendia fazer o lançamento do mapa com o uso do rviz para passar por uma série pontos, contudo, em decorrência de um erro não identificado não foi possível realizar a atividade. 
+Agora podemos inicializar o pacote de navegação através do launch file ocntido no workspace, assim iremos rodar o comando: 
 
-[Navigation](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/2d8f1697-c23d-408f-9554-a4fc4a632637)
+
+```bash
+ros2 launch navigation_package navigation_launch.py
+```
+
+[Screencast from 14-11-2023 21:10:11.webm](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/0e5b5a5e-3c2f-40b9-81ec-cccac21a57d8)
+
+# Conclusão
+
+Desta forma, foi possível realizar a atividade como esperado.
