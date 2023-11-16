@@ -4,16 +4,18 @@ Esse repositório foi criado com o intuito de armazenar as atividades do Módulo
 # Ponderada 2
 Pressupondo que o usuário já possui o ROS2 instalado em sua máquina, instalaremos algumas dependenciais para o funcionamento correto do projeto.
 
-## RViz2
+## Instalações 
+
+### RViz2
 ```bash
 sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-turtlebot3* ros-humble-rmw-cyclonedds-cpp
 ```
-## RMW 
+### RMW 
 ```bash
 echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.zshrc # ou~/.bashrc 
 ```
 
-## Gazebo 
+### Gazebo 
 ```bash
 curl -sSL http://get.gazebosim.org | sh
 gazebo
@@ -29,7 +31,7 @@ export TURTLEBOT3_MODEL=burger
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
 ```
 
-## Dependências adicionais
+### Dependências adicionais
 ```bash
 sudo apt-get install ros-humble-turtle-tf2-py ros-humble-tf2-tools ros-humble-tf-transformations
 ```
@@ -40,7 +42,7 @@ Após este passo devemos rodar o comando source no shell utilizado (bash ou zsh)
 source ~/.bashrc # ou ~/.zshrc 
 ```
 
-## Clonando o projeto
+### Clonando o projeto
 A partir desse momento você tem as dependencias necessárias para rodar o projeto, então vamos aos próximos passos
 
 ```bash
@@ -65,7 +67,7 @@ Vamos rodar o comando source novamente, mas agora na setup do workspace
 source install/setup.zsh # ou setup.bash dependendo do shell
 ```
 
-## Startup via launch file Mapeamento
+### Startup via launch file - Mapeamento
 Agora podemos inicializar nossos pacotes através do launch file contido no workspace, assim iremos rodar o comando:
 
 ```bash
@@ -81,7 +83,7 @@ E assim teremos um ambiente mapeado que pode ser salvo através do seguinte coma
 ros2 run nav2_map_saver map_saver_cli -f $diretório/de/preferência$
 ```
 
-## Startup via launch file Navegação
+### Startup via launch file - Navegação
 Agora podemos inicializar o pacote de navegação através do launch file ocntido no workspace, assim iremos rodar o comando: 
 
 
@@ -89,8 +91,48 @@ Agora podemos inicializar o pacote de navegação através do launch file ocntid
 ros2 launch navigation_package navigation_launch.py
 ```
 
-[Screencast from 14-11-2023 21:10:11.webm](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/0e5b5a5e-3c2f-40b9-81ec-cccac21a57d8)
+[Navigation](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/0e5b5a5e-3c2f-40b9-81ec-cccac21a57d8)
 
-# Conclusão
+## Conclusão
 
 Desta forma, foi possível realizar a atividade como esperado.
+
+# Ponderada 3
+
+## Instalações
+É fundamental seguir os passos de instalação da seção anterior de modo que todas as dependências utilizadas estejam instaladas e corretamente configuradas
+
+### Clonando o projeto
+A partir desse momento você tem as dependencias necessárias para rodar o projeto, então vamos aos próximos passos
+
+```bash
+git clone https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO.git
+```
+
+Vamos entrar no workspace contido no projeto pelo comando
+
+```bash
+cd M8T2-ATIVIDADES-CAIO/p3/ws
+```
+
+Vamos rodar o comando de build do workspace
+
+```bash
+colcon build
+```
+
+Vamos rodar o comando source novamente, mas agora na setup do workspace
+
+```bash
+source install/setup.zsh # ou setup.bash dependendo do shell
+```
+### Startup via launch file - ChatBot
+Agora podemos inicializar nossos pacotes através do launch file contido no workspace, assim iremos rodar o comando:
+
+```bash
+ros2 launch chatbot_package chatbot_launch.py
+```
+
+Então veremos as telas a seguir e poderemos interagir com o chatbot e controlar nosso robô para realizar a navegação através de linguagem natural:
+
+[ChatBot](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/62e6bcee-c29f-46cf-bb3a-c174ee4a48e7)
