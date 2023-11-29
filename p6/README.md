@@ -22,9 +22,10 @@ Este código implementa um perceptron para identificar portas lógicas como AND,
 
 - `inputs`: Matriz de entradas para as operações lógicas.
 - `Perceptron`: Classe que implementa as funções do perceptron.
-  - `predict`: Método para fazer previsões com base nos pesos e no limiar.
-  - `train_perceptron`: Método para treinar o perceptron com base nos dados de entrada e saída.
-
+  - `step_function`: Função de ativação que retorna 1 se o valor for maior que o limiar e 0 caso contrário.
+  - `train`: Método para treinar o perceptron com base nos dados de entrada e saída. 
+  - `teste`: Método para testar o perceptron com base nos dados de entrada e saída.
+  - `display_progress`: Método para exibir o progresso do treinamento do perceptron.
 ## Problema do XOR
 
 O perceptron é um classificador linear, o que significa que só pode separar classes usando uma linha reta (ou um hiperplano em dimensões superiores). Problemas como as portas lógicas AND, NAND e OR são linearmente separáveis e podem ser resolvidos por um perceptron.
