@@ -53,7 +53,8 @@ Este código demonstra a integração de um modelo de linguagem LLAMA2 com uma i
 
 ## Demonstração
 
+[DEMO-P5](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/90638e47-0c3f-4eb0-adee-f58833f77099)
 
 ## Licença
 
-Este código é uma implementação fornecida pela equipe do Keras e está sujeito à [licença do Keras](https://keras.io/about/#license-information).
+Este projeto está licenciado sob a [Creative Commons Zero (CC0) License](https://creativecommons.org/publicdomain/zero/1.0/deed.pt).
