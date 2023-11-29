@@ -11,6 +11,7 @@ Este código implementa um perceptron para identificar portas lógicas como AND,
 
 - Python 3.x
 - Biblioteca NumPy
+- Biblioteca tqdm
 
 ## Como usar
 
@@ -26,6 +27,7 @@ Este código implementa um perceptron para identificar portas lógicas como AND,
   - `train`: Método para treinar o perceptron com base nos dados de entrada e saída. 
   - `teste`: Método para testar o perceptron com base nos dados de entrada e saída.
   - `display_progress`: Método para exibir o progresso do treinamento do perceptron.
+
 ## Problema do XOR
 
 O perceptron é um classificador linear, o que significa que só pode separar classes usando uma linha reta (ou um hiperplano em dimensões superiores). Problemas como as portas lógicas AND, NAND e OR são linearmente separáveis e podem ser resolvidos por um perceptron.
@@ -33,6 +35,10 @@ O perceptron é um classificador linear, o que significa que só pode separar cl
 No entanto, a porta lógica XOR não é linearmente separável. Isso significa que não é possível desenhar uma única linha reta para separar as saídas 0 e 1. Não importa como você ajuste os pesos e os limiares, um único neurônio (como o perceptron) não poderá capturar a lógica XOR, pois ela requer uma fronteira de decisão não linear.
 
 Para resolver problemas não linearmente separáveis como XOR, seria necessário recorrer a arquiteturas mais complexas de redes neurais, como redes multicamadas (por exemplo, redes neurais profundas) ou outras técnicas que possam lidar com fronteiras de decisão não lineares.
+
+## Demonstração 
+
+[Demo-P6](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/57e07c36-201f-4690-9f2d-0adce39d9fcd)
 
 ## Licença
 
