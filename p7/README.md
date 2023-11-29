@@ -57,10 +57,11 @@ A ConvNet utilizada neste exemplo possui a seguinte arquitetura:
    ```bash 
     $ python --version
     ```
-2. Instale o TensorFlow e o Keras.
+2. Instale o TensorFlow e o Keras. &darr;
     ```bash 
     $ pip install tensorflow keras
     ```
+    Obs O jupyter notebook conta com uma célula de código para cada instrução listada acima.
 
 3. Abra o jupyter notebook em que o código está inserido e 
 clique me `Run All`.
