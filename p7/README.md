@@ -69,9 +69,9 @@ clique me `Run All`.
 
 5. Visualize algumas previsões feitas pelo modelo.
 
-## Referência
+## Demonstração
 
-O exemplo original pode ser encontrado na documentação do Keras em [MNIST ConvNet](https://keras.io/examples/vision/mnist_convnet/).
+[DEMO-P7.webm](https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/ea48f570-6063-4c97-bcd0-26034818d718)
 
 ## Licença
 
