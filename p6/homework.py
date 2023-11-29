@@ -4,6 +4,7 @@
 import numpy as np
 import os
 from time import sleep
+from tqdm import tqdm
 
 # Logic Gates truth tables
 # AND Gate - 0 0 = 0, 0 1 = 0, 1 0 = 0, 1 1 = 1
@@ -21,7 +22,9 @@ class Perceptron:
         return 1 if x >= 0 else 0
 
     def train(self, inputs, outputs, learning_rate=0.1):
-        for self.epoch in range(self.epochs):
+        for self.epoch in tqdm(range(1, self.epochs + 1), 
+                                desc="Treinando", colour='green', 
+                                unit=' Épocas'):
             for i in range(len(inputs)):
                 input_data = inputs[i]
                 target_output = outputs[i]
@@ -34,6 +37,8 @@ class Perceptron:
                 self.weights += learning_rate * error * input_data
                 self.bias += learning_rate * error
 
+            # self.display_progress()
+
     def test(self, inputs):
         results = []
         for input_data in inputs:
@@ -41,6 +46,10 @@ class Perceptron:
             output = self.step_function(weighted_sum)
             results.append(output)
         return results
+    
+    #def display_progress(self):
+    #    print(f"Epoch {self.epoch}/{self.epochs} - Weights: {self.weights}, Bias: {self.bias}")
+
 
 def main():
     gate_types = ['AND', 'OR', 'NAND', 'XOR']
@@ -81,7 +90,7 @@ def main():
     print(f'Pesos: {perceptron.weights}')
     print(f'Viés: {perceptron.bias}')
 
-    sleep(3)
+    sleep(10)
     os.system('cls' if os.name == 'nt' else 'clear')
 
 if __name__ == "__main__":
