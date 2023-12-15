@@ -1,0 +1,1 @@
+# Implementação de STT e TTS usando o Whisper 
