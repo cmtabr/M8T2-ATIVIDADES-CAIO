@@ -55,3 +55,6 @@ python lesson.py
 
 ## Observações
 - O código atual está configurado para funcionar com um arquivo de áudio chamado "katyusha.mp3" na pasta "p8". Certifique-se de ajustar conforme necessário.
+
+## Demo 
+Abaixo podemos ver a demonstração da ferramente funcionando.
