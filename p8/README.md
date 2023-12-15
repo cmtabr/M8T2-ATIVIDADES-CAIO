@@ -54,10 +54,6 @@ python lesson.py
 ```
 
 ## Observações
-
-https://github.com/cmtabr/M8T2-ATIVIDADES-CAIO/assets/99201276/326d344b-b899-4f3c-9965-b62237a437bf
-
-
 - O código atual está configurado para funcionar com um arquivo de áudio chamado "katyusha.mp3" na pasta "p8". Certifique-se de ajustar conforme necessário.
 
 ## Demo 
